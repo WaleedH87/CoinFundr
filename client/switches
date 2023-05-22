@@ -1,0 +1,16 @@
+[#d3d0cd] dark:[#2c2f32]
+[#e3e3db] dark:[#2c2f32]
+[#ecece5] dark:[#13131a]
+bg-[#e3e3db] dark:bg-[#1c1c24]
+bg-[#c5c5bc] dark:bg-[#3a3a43]
+text-[#13131a] dark:text-white
+text-[#7f7e6e] dark:text-[#808191]
+[#b4ad9b] dark:[#4b5264]
+text-[#7e7e7c] dark:text-[#818183]
+text-[#4d4c42] dark:text-[#b2b3bd]
+GREEN BUTTON: bg-[#25C071] hue-rotate-55 dark:hue-rotate-0
+PURPLE BUTTON: bg-[#8c6dfd] hue-rotate-310 dark:hue-rotate-0
+
+///////////////////////////////////////
+
+hue-rotate-55 dark:hue-rotate-0

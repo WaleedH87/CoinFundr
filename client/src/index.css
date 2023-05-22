@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+  .gradient-text {
+
+    /* Fallback: Set a background color. */
+    background-color: rgb(0,252,168);
+    
+    /* Create the gradient. */
+    background-image: linear-gradient(90deg, rgba(0,252,168,1) 0%, rgba(28,218,255,1) 100%);
+    
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+  
+    background-clip: text;
+  
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  }
+
+  .gradient-text-light {
+
+    /* Fallback: Set a background color. */
+    background-color: rgb(0,130,240);
+    
+    /* Create the gradient. */
+    background-image: linear-gradient(90deg, rgba(0,130,240,1) 0%, rgba(11,232,118,1) 100%);
+    
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+  
+    background-clip: text;
+  
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  }
+  
+  .gradient-bar {
+    /* Fallback: Set a background color. */
+    background-color: rgb(0,252,168);
+    
+    /* Create the gradient. */
+    background-image: linear-gradient(90deg, rgba(0,252,168,1) 0%, rgba(28,218,255,1) 100%);
+  }
+
+  .gradient-bar-light {
+    /* Fallback: Set a background color. */
+    background-color: rgb(0,130,240);
+    
+    /* Create the gradient. */
+    background-image: linear-gradient(90deg, rgba(0,130,240,1) 0%, rgba(11,232,118,1) 100%);
+  }
+}
+
+
+.linear-gradient {
+  background: linear-gradient(
+    179.14deg,
+    rgba(32, 18, 63, 0) -7.14%,
+    #000000 87.01%
+  );
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  filter: invert(0.8);
+}
