@@ -1,4 +1,4 @@
-# CoinFundr Blockchain Crowdfunding  :coin:
+# CoinFundr Web 3.0 Crowdfunding  :coin:
 
 >Welcome to CoinFundr, a cutting-edge crypto crowdfunding platform that combines clean, modern design with seamless integration to the blockchain. With this platform, you can effortlessly connect your Metamask wallet, interact with smart contracts, securely send Ethereum through the blockchain network, all made possible with Solidity and Thirdweb. All the components are in the src file.
 
@@ -23,9 +23,9 @@
 
 ## Key Features
 
-:green_circle:  Clean, Modern UI/UX Design
+:green_circle:  Clean, Modern UI/UX Design with Light/Dark/System Modes.
 
-:green_circle:  Fully responsive on all devices
+:green_circle:  Fully responsive on all devices - Desktop/Tablet/Mobile.
 
 :green_circle:  Web 3.0 ready, with seamless integration of Smart Contracts and MetaMask.
 
