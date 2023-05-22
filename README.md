@@ -23,9 +23,9 @@
 
 ## Key Features
 
-:green_circle:  Clean, Modern UI/UX Design
+:green_circle:  Clean, Modern UI/UX Design with Light/Dark/System Modes.
 
-:green_circle:  Fully responsive on all devices
+:green_circle:  Fully responsive on all devices - Desktop/Tablet/Mobile.
 
 :green_circle:  Web 3.0 ready, with seamless integration of Smart Contracts and MetaMask.
 
