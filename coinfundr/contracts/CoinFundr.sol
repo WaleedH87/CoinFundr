@@ -1,6 +1,13 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.9;
 
+/// @title CoinFunder Smart Contract
+/// @author Waleed H.
+/// @notice Web 3.0 Crowdfunding Platform
+/// @dev ...
+
+// Defining Structure of Smart Contract & Data Types for each parameter
+
 contract CoinFundr {
     struct Campaign {
         address owner;
@@ -14,9 +21,13 @@ contract CoinFundr {
         uint256[] donations;
     }
 
+    // Mapping parameters into 'campaigns' object
+
     mapping(uint256 => Campaign) public campaigns;
 
     uint256 public numberOfCampaigns = 0;
+
+    // Defining Campaign Creation Function
 
     function createCampaign(address _owner, string memory _title, string memory _description, uint256 _target, uint256 _deadline, string memory _image) public returns (uint256) {
         Campaign storage campaign = campaigns[numberOfCampaigns];
@@ -37,6 +48,8 @@ contract CoinFundr {
         return numberOfCampaigns - 1;
     }
 
+    // Defining Campaign Donation Function
+
     function donateToCampaign(uint256 _id) public payable {
         uint256 amount = msg.value;
 
@@ -52,9 +65,13 @@ contract CoinFundr {
         }
     }
     
+    // Defining Donor Retrieval Function
+
     function getDonors(uint256 _id) view public returns (address[] memory, uint256[] memory) {
         return (campaigns[_id].donors, campaigns[_id].donations);
     }
+
+    // Defining Campaign Retrieval Function
 
     function getCampaigns() public view returns (Campaign[] memory) {
         Campaign[] memory allCampaigns  = new Campaign[](numberOfCampaigns);

@@ -20,6 +20,8 @@ const CampaignDetails = () => {
   const percentage = percentRaised(state.amountCollected, state.target); 
 
 
+// Fetches all donors to the campaign and returns names/addresses as a list.
+
   const fetchDonors = async () => {
     const data = await getDonations(state.pId);
 
@@ -29,6 +31,8 @@ const CampaignDetails = () => {
   useEffect(() => {
     if(contract) fetchDonors();
   }, [contract, address])
+
+// Handle function for donation button's handleClick().
 
   const handleDonate = async () => {
     setIsLoading(true);

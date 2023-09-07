@@ -7,6 +7,9 @@ import { money } from '../assets';
 import { CustomButton, FormField, TransactionLoader } from '../components';
 import { checkIfImage } from '../utils';
 
+
+// Create a Campaign Function.
+
 const CreateCampaign = () => {
   const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(false);
@@ -20,9 +23,13 @@ const CreateCampaign = () => {
     image: '',
   });
 
+  // Dynamic Form field using React States.
+
   const handleFormFieldChange = (fieldName, e) => {
     setForm({ ...form, [fieldName]: e.target.value })
   }
+
+// Handles submitting function. If image has not been submitted, alert thrown and form is not submitted.
 
   const handleSubmit = async (e) => {
     e.preventDefault();

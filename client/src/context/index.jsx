@@ -13,6 +13,8 @@ export const StateContextProvider = ({ children }) => {
     const address = useAddress();
     const connect = useMetamask();
 
+// Publishing Campaigns Function.
+
     const publishCampaign = async (form) => {
         try {
             const data = await createCampaign({ args: [
@@ -29,6 +31,8 @@ export const StateContextProvider = ({ children }) => {
             console.log("contract call failure", error);
         }
       }     
+
+// Fetch Campaigns Function.
 
 const getCampaigns = async () => {
   const campaigns = await contract.call('getCampaigns');
@@ -59,13 +63,19 @@ const getCampaigns = async () => {
   return parsedCampaigns;
 }
 
+// Fetching all campaigns belonging to a specific user.
+
 const getUserCampaigns = async () => {
   const allCampaigns = await getCampaigns();
 
+  // Filtering campaigns by address.
   const filteredCampaigns = allCampaigns.filter((campaign) => campaign.owner === address);
 
   return filteredCampaigns;
 }
+
+
+// Donation Function.
 
 const donate = async (pId, amount) => {
 
@@ -75,6 +85,8 @@ const donate = async (pId, amount) => {
 
   return data;
 }
+
+// Fetch all donations function.
 
 const getDonations = async (pId) => {
   const _id = '' + pId

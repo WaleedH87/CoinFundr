@@ -17,6 +17,8 @@ const Home = () => {
     setIsLoading(false);
   }
 
+  // Campaigns can be printed once fetched. 
+  
   useEffect(() => {
     if(contract) fetchCampaigns();
   }, [address, contract])
